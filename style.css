@@ -1,3 +1,10 @@
+/* CSS for the header */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -9,6 +16,8 @@ header {
   position: fixed;
   width: 100%;
   height: 80px;
+  opacity: 1;
+  background-color: white;
 }
 
 header span {
@@ -40,43 +49,156 @@ nav a {
   color: black;
 }
 
-.content {
-  padding-top: 116px;
-  border: 1px solid black;
-  width: 100%;
-  height: 200px;
+/* CSS for the main container */
+
+.container {
   display: flex;
+  justify-content: space-between;
+  padding: 100px 20px 0 20px;
+  margin-bottom: 78px;
 }
 
-.content .large {
-  width: 630px;
-  border: 1px solid black;
-  display: flex;
-  flex-grow: 1;
+div {
+  /*border: 1px solid black;*/
 }
 
-.content .medium {
-  width: 300px;
-  border: 1px solid black;
-  display: flex;
-  flex-grow: 1;
-}
-
-.content .small {
-  width: 240px;
-  border: 1px solid black;
-  display: flex;
-  flex-grow: 1;
-}
-
-#main-story {
+.large, .medium, .small {
+  /*border: 1px solid black;*/
   display: flex;
   flex-direction: column;
 }
 
-.img-content {
-  background-image: url('images/img-story-main.png');
+.large {
   width: 630px;
+}
+
+.medium {
+  width: 300px;
+}
+
+.small {
+  width: 240px;
+}
+
+#headline {
+  background-image: url("images/img-story-main.png");
+  display: flex;
   height: 300px;
-  flex-grow: 1;
+}
+
+.on-image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+#headline span {
+  font-size: 40px;
+  padding-bottom: 100px;
+  display: block;
+
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#large1, #large2 {
+  width: 48%;
+}
+
+#large1 div {
+  background-image: url("images/img-story-2.png");
+  height: 300px;
+  display: flex;
+}
+
+#large2 div {
+  background-image: url("images/img-story-3.png");
+  height: 300px;
+  display: flex;
+}
+
+#mid1 {
+  background-image: url("images/img-story-1.png");
+  height: 300px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.small h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small ul {
+  list-style: none;
+}
+
+.small ul li {
+  padding: 0;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  /*text-align: center;*/
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 325px;
+  width: 100%;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  justify-content: center;
+
+}
+
+footer div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .info span {
+  display: block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px;
+}
+
+footer .info, footer .info ul {
+  display: flex;
+  align-items: center;
+}
+
+footer .info ul {
+  list-style: none;
+  padding-left: 25px;
+}
+
+footer .info ul li {
+  padding-right: 15px;
+}
+
+footer .info ul li a {
+  color: black;
 }
